@@ -1,0 +1,47 @@
+replicaCount: 1
+
+image:
+  repository: thecampagnards/trafficlight-api
+  pullPolicy: IfNotPresent
+  tag: main
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+podSecurityContext: {}
+
+securityContext:
+  privileged: true
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: trafficlight-api.local
+      paths:
+        - path: /
+  tls: []
+
+volumeMounts:
+  - mountPath: /dev/ttyACM0
+    name: ttyacm
+
+volumes:
+  - name: ttyacm
+    hostPath:
+      path: /dev/ttyACM0
+
+resources: {}
+
+autoscaling:
+  enabled: false
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
