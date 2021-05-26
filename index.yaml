@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  trafficlight-api:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-05-26T14:25:59.755834593Z"
+    description: A Helm chart for Kubernetes for trafficlight-api
+    digest: 78faedf267172c80ee90f8e1b30b9effce8daf38ebe2b3cd3e6059b14eba4460
+    name: trafficlight-api
+    type: application
+    urls:
+    - https://github.com/thecampagnards/helm-charts/releases/download/trafficlight-api-0.1.1/trafficlight-api-0.1.1.tgz
+    version: 0.1.1
+generated: "2021-05-26T14:25:59.62667607Z"
