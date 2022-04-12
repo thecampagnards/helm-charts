@@ -5,5 +5,5 @@ type: application
 name: postgrest
 version: 0.1.2
 maintainers:
-  - name: Lars Martin
+  - name: Sidorenko Konstantin
     email: konstantin.sidorenko@orange.fr
