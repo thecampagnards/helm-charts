@@ -1,0 +1,9 @@
+apiVersion: v2
+appVersion: "9.0.0.20220211"
+description: Webserver that turns any PostgreSQL database directly into a RESTful API.
+type: application
+name: postgrest
+version: 0.1.0
+maintainers:
+  - name: Lars Martin
+    email: konstantin.sidorenko@orange.fr
