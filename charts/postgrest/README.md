@@ -43,7 +43,6 @@ for more detailed documentation and examples:
 |`postgrest.db_anon_role`     | Database role to use                                        | n/a         |
 |`postgrest.db_pool`          | Number of connections to keep open                          | `100`       |
 |`postgrest.server_host`      | Where to bind the PostgREST web server                      | `*4`        |
-|`postgrest.server_port`      | The port to bind the web server                             | `3000`      |
 |`postgrest.server_proxy_uri` | Overrides the base URL                                      | n/a`        |
 |`postgrest.jwt_secret`       | The secret or JSON Web Key (JWK) used to decode JWT tokens  | n/a         |
 |`postgrest.secret_is_base64` |                                                             | `false`     |
