@@ -35,7 +35,7 @@ ingress:
 postgrest:
   db_uri:
   db_schema: public
-  db_anon_role:
+  db_anon_role: postgres
   db_pool: 100
   server_host: '*4'
   server_proxy_uri:
