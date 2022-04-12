@@ -3,6 +3,20 @@ entries:
   postgrest:
   - apiVersion: v2
     appVersion: 9.0.0.20220211
+    created: "2022-04-12T15:47:48.740381941Z"
+    description: Webserver that turns any PostgreSQL database directly into a RESTful
+      API.
+    digest: 8c14a5a03f8193c2a122a9e5aaf672b69ce4fef202f7da652032690652b9235e
+    maintainers:
+    - email: konstantin.sidorenko@orange.fr
+      name: Lars Martin
+    name: postgrest
+    type: application
+    urls:
+    - https://github.com/thecampagnards/helm-charts/releases/download/postgrest-0.1.1/postgrest-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 9.0.0.20220211
     created: "2022-04-12T14:46:18.030411068Z"
     description: Webserver that turns any PostgreSQL database directly into a RESTful
       API.
@@ -26,4 +40,4 @@ entries:
     urls:
     - https://github.com/thecampagnards/helm-charts/releases/download/trafficlight-api-0.1.1/trafficlight-api-0.1.1.tgz
     version: 0.1.1
-generated: "2022-04-12T14:46:18.030416068Z"
+generated: "2022-04-12T15:47:48.740389641Z"
