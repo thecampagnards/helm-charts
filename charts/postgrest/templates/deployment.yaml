@@ -46,18 +46,18 @@ spec:
             {{- toYaml . | nindent 12 }}
           {{- end }}
           env:
-            - name: PGRST_DB_URI
             {{- if .Values.postgrest.db_uri }}
+            - name: PGRST_DB_URI
               value: {{ .Values.postgrest.db_uri | quote }}
             {{- end }}
             - name: PGRST_SERVER_PORT
               value: {{ .Values.service.port | quote }}
-            - name: PGRST_DB_SCHEMA
             {{- if .Values.postgrest.db_schema }}
+            - name: PGRST_DB_SCHEMA
               value: {{ .Values.postgrest.db_schema | quote }}
             {{- end }}
-            - name: PGRST_DB_ANON_ROLE
             {{- if .Values.postgrest.db_anon_role }}
+            - name: PGRST_DB_ANON_ROLE
               value: {{ .Values.postgrest.db_anon_role | quote }}
             {{- end }}
             {{- if .Values.postgrest.db_pool }}
