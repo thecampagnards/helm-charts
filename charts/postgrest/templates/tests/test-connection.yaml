@@ -3,16 +3,13 @@ kind: Pod
 metadata:
   name: "{{ include "postgrest.fullname" . }}-test-connection"
   labels:
-    app.kubernetes.io/name: {{ include "postgrest.name" . }}
-    helm.sh/chart: {{ include "postgrest.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "postgrest.labels" . | nindent 4 }}
   annotations:
-    "helm.sh/hook": test-success
+    "helm.sh/hook": test
 spec:
   containers:
     - name: wget
       image: busybox
       command: ['wget']
-      args:  ['{{ include "postgrest.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "postgrest.fullname" . }}:{{ .Values.service.port }}']
   restartPolicy: Never
