@@ -3,7 +3,7 @@ appVersion: v9.0.0.20220211
 description: Webserver that turns any PostgreSQL database directly into a RESTful API.
 type: application
 name: postgrest
-version: 0.1.3
+version: 0.1.4
 maintainers:
   - name: Sidorenko Konstantin
     email: konstantin.sidorenko@orange.fr

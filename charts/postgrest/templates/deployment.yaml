@@ -40,7 +40,7 @@ spec:
           env:
             - name: PGRST_DB_URI
             {{- if .Values.postgrest.db_uri }}
-              value: {{ .Values.postgrest.db_uri }}
+              value: {{ .Values.postgrest.db_uri | quote }}
             {{- end }}
             - name: PGRST_SERVER_PORT
               value: {{ .Values.service.port | quote }}
